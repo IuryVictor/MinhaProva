@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ActivityAcao3">
+
+            <Button
+                android:id="@+id/anteriorButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/BordaBotoesInferiores"
+                android:layout_marginTop="230dp"
+                android:layout_marginBottom="@dimen/BordaBotoesInferiores"
+                android:text="@string/anterior"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/notaTextView2" />
+
+            <Button
+                android:id="@+id/proximoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/BordaBotoesInferiores"
+                android:layout_marginBottom="@dimen/BordaBotoesInferiores"
+                android:text="@string/proximo"
+                app:layout_constraintBottom_toBottomOf="@+id/anteriorButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/anteriorButton"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tituloTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/bordaLeft"
+                android:layout_marginTop="@dimen/bordaCima"
+                android:text="@string/titulo"
+                android:textSize="@dimen/sizeText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/AutorTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/bordaLeft"
+                android:layout_marginTop="@dimen/bordaCima"
+                android:text="@string/autor"
+                android:textSize="@dimen/sizeText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tituloTextView2" />
+
+            <TextView
+                android:id="@+id/anoTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/bordaLeft"
+                android:layout_marginTop="@dimen/bordaCima"
+                android:text="@string/ano"
+                android:textSize="@dimen/sizeText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/AutorTextView2" />
+
+            <TextView
+                android:id="@+id/notaTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/bordaLeft"
+                android:layout_marginTop="@dimen/bordaCima"
+                android:text="@string/nota"
+                android:textSize="@dimen/sizeText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anoTextView2" />
+
+            <TextView
+                android:id="@+id/valorTituloTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/bordaLeft"
+                android:text="@string/titulo"
+                android:textSize="@dimen/sizeText"
+                app:layout_constraintBottom_toBottomOf="@+id/tituloTextView2"
+                app:layout_constraintStart_toEndOf="@+id/tituloTextView2"
+                app:layout_constraintTop_toTopOf="@+id/tituloTextView2" />
+
+            <TextView
+                android:id="@+id/valorAutorTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/bordaLeft"
+                android:text="@string/autor"
+                android:textSize="@dimen/sizeText"
+                app:layout_constraintBottom_toBottomOf="@+id/AutorTextView2"
+                app:layout_constraintStart_toEndOf="@+id/AutorTextView2"
+                app:layout_constraintTop_toTopOf="@+id/AutorTextView2" />
+
+            <TextView
+                android:id="@+id/valorAnoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/bordaLeft"
+                android:text="@string/ano"
+                android:textSize="@dimen/sizeText"
+                app:layout_constraintBottom_toBottomOf="@+id/anoTextView2"
+                app:layout_constraintStart_toEndOf="@+id/anoTextView2"
+                app:layout_constraintTop_toTopOf="@+id/anoTextView2" />
+
+            <TextView
+                android:id="@+id/valorNotaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/bordaLeft"
+                android:text="@string/nota"
+                android:textSize="@dimen/sizeText"
+                app:layout_constraintBottom_toBottomOf="@+id/notaTextView2"
+                app:layout_constraintStart_toEndOf="@+id/notaTextView2"
+                app:layout_constraintTop_toTopOf="@+id/notaTextView2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

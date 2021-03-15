@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MinhaProva</string>
+    <string name="button1">Botão 1</string>
+    <string name="button2">Botão 2</string>
+    <string name="button3">Botão 3</string>
+    <string name="button4">Botão 4</string>
+    <string name="textview1">Texto 1</string>
+    <string name="textview2">Texto 2</string>
+    <string name="ok">OK</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="name">Nome</string>
+    <string name="titulo">Titulo</string>
+    <string name="autor">Autor</string>
+    <string name="ano">Ano</string>
+    <string name="nota">Nota</string>
+    <string name="salvar">Salvar</string>
+    <string name="proximo">Próximo</string>
+    <string name="anterior">Anterior</string>
+</resources>

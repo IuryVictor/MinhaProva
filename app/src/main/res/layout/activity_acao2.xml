@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ActivityAcao2">
+
+            <TextView
+                android:id="@+id/tituloTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/bordaLeft"
+                android:layout_marginTop="@dimen/bordaCima"
+                android:text="@string/titulo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="@dimen/sizeText"/>
+
+            <TextView
+                android:id="@+id/autorTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/bordaLeft"
+                android:layout_marginTop="@dimen/bordaCima"
+                android:text="@string/autor"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tituloTextView"
+                android:textSize="@dimen/sizeText"/>
+
+            <TextView
+                android:id="@+id/anoTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/bordaLeft"
+                android:layout_marginTop="@dimen/bordaCima"
+                android:text="@string/ano"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/autorTextView"
+                android:textSize="@dimen/sizeText"/>
+
+            <TextView
+                android:id="@+id/notaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/bordaLeft"
+                android:layout_marginTop="@dimen/bordaCima"
+                android:text="@string/nota"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anoTextView"
+                android:textSize="@dimen/sizeText"/>
+
+            <EditText
+                android:id="@+id/tituloEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/bordaRight"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/titulo"
+                app:layout_constraintBottom_toBottomOf="@+id/tituloTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tituloTextView" />
+
+            <EditText
+                android:id="@+id/autorEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/bordaRight"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/autor"
+                app:layout_constraintBottom_toBottomOf="@+id/autorTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/autorTextView" />
+
+            <EditText
+                android:id="@+id/anoEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/bordaRight"
+                android:ems="10"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@+id/anoTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/anoTextView" />
+
+            <RatingBar
+                android:id="@+id/notaRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/bordaRight"
+                app:layout_constraintBottom_toBottomOf="@+id/notaTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/notaTextView"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:rating="0"/>
+
+            <Button
+                android:id="@+id/salvarButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="72dp"
+                android:text="@string/salvar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/notaTextView" />
+
+            <Button
+                android:id="@+id/CancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="88dp"
+                android:text="@string/cancelar"
+                app:layout_constraintBottom_toBottomOf="@+id/salvarButton"
+                app:layout_constraintStart_toEndOf="@+id/salvarButton"
+                app:layout_constraintTop_toTopOf="@+id/salvarButton"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>
